@@ -22,7 +22,7 @@ def get_ticker_fields(tickers, fields=["last_trade"], dataframe=None):
     for ticker in tickers:
         all_data[ticker] = dict()
         for field in fields:
-            current_time = datetime.datetime.now().strftime("%S%M%H_%d%m%Y")
+            current_time = datetime.datetime.now().strftime("%H%M%S_%d%m%Y")
             
             data = content[ticker][field]
             
